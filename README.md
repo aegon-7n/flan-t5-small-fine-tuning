@@ -6,17 +6,19 @@ This project implements a text generation model using the Hugging Face Transform
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/your-project-name.git
-cd your-project-name
+git clone https://github.com/aegon-7n/flan-t5-small-fine-tuning.git
+cd flan-t5-small-fine-tuning
 ```
 2. Install dependencies:
 ```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 ## Usage
 Run the inference script:
 ```bash
-python scripts/run_inference.py
+PYTHONPATH=$(pwd) python scripts/run_inference.py
 ```
 ## Features
 Text generation using fine tuned flan-t5-small model
